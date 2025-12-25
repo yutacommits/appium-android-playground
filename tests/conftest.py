@@ -21,6 +21,6 @@ def driver():
     driver = webdriver.Remote(
         appium_server_url, options=UiAutomator2Options().load_capabilities(capabilities)
     )
-    driver.implicitly_wait(10)
+    driver.implicitly_wait(5)
     yield driver
     driver.quit()

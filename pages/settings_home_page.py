@@ -8,6 +8,7 @@ class SettingsHomePage(BasePage):
     CONNECTED_DEVICES = (AppiumBy.XPATH, '//*[@text="Connected devices"]')
 
     def open_apps(self):
+        self.find_scroll(self.APPS)
         self.click(self.APPS)
 
     def open_connected_devices(self):
